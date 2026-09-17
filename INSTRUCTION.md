@@ -4,6 +4,16 @@
 
 This project runs a Django ToDo application inside a Kubernetes cluster.
 
+## Build and Push Docker Image to my personal repository
+
+```bash
+# Build the application image from the repository root:
+docker build -t zhekul/todoapp:3.0.0 src/
+
+# Push to my personal repository
+docker push zhekul/todoapp:3.0.0
+```
+
 The setup uses:
 
 - Django application
